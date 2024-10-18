@@ -5,7 +5,9 @@ import joblib  # For loading the PK file
 from sklearn.preprocessing import StandardScaler
 
 # Load your trained model
-model = joblib.load(r"W:\courses\SIC\assigments&tasks\20-final project\model\model.pk")
+# model = joblib.load(r"W:\courses\SIC\assigments&tasks\20-final project\model\model.pk")
+# Load your trained model (using a relative path)
+model = joblib.load('model/model.pk')  # Adjust this according to your directory structure
 
 
 # Streamlit UI
